@@ -13,10 +13,10 @@ ul {
   align-items: start;
   list-style-type: none;
 
-  li {
+    a1 {
     padding: 6px 0;
 
-    a {
+    a2 {
       position: relative;
       display: block;
       text-decoration: none;
