@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>test</title>
-     <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-  <script src="js/alert.js"></script>
-  </body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tutorial_6_task2</title>
+    <meta name="description" content="Tutorial_6_task2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- logo -->
+    <main class="grid">
+        <section class="span-row-2">
+            <a class="main-header-logo" href="index.html">
+                <img src="img/FRIENDFACE2.png" width="250" height="250" alt="Logo">
+            </a>
+        </section>
+    <!-- social link -->
+        <section class="span-col-3">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-tumblr"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </section>
+    <!-- text section -->
+        <section class="span-col-3">
+            <h1>We will help you to find your soulmate!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </section>
+    <!-- form section 1 -->
+        <div class="span-col-4">
+            <form method="get">
+                <fieldset>
+                    <legend>
+                        <h3>Your Details:</h3>
+                    </legend>
+                    <label>Name: <input type="text" name="name"/></label>
+                    <label>Surname:<input type="text" name="surname"/></label>
+                    <label>Age:<input type="number" name="age"/></label>
+                    <label>Email:<input type="text" name="email"/></label>
+                    <label>Telephone number:<input type="text" name="telephone"/></label>
+                    <labe>Gender:</labe> <br>
+                    <input type="radio" name="gender" value="male" checked> Male <br>
+                    <input type="radio" name="gender" value="female"> Female <br>
+                    <input type="radio" name="gender" value="other"> Prefer not to say <br>
+                    <p>Upload your profile photo:</p>
+                    <input type="file" name="user-photo"/>
+                    <input type="submit" value="Upload"/>
+                </fieldset>
+        </div>
+        <!-- form section 2 -->
+        <div class="span-col-4">
+            <fieldset>
+                <legend>
+                    <h3>Your Review:</h3>
+                </legend>
+                <p>
+                    <label for="hear-about">How did you hear about us?</label>
+                    <select name="referrer" id="hear-about">
+                        <option value="google">Google</option>
+                        <option value="friend">Friend</option>
+                        <option value="advert">Lecturer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <label><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email
+                    updates</label><br />
+                <input type="submit" value="Submit" />
+            </fieldset>
+            </form>
+            </fieldset>
+        </div>
+        <!-- form section 3 -->
+        <div class="span-col-4">
+            <fieldset>
+                <legend>
+                    <h3>Rewiew us:</h3>
+                </legend>
+                <textarea class="textarea-box">Some text...</textarea>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </div>
+        <!-- footer -->
+            <footer class="span-col-4">
+                <h4 class="footer-text">2019 | Footer text  </h4>
+            </footer>
+    </main>
+</body>
 </html>
