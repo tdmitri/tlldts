@@ -1,0 +1,185 @@
+    * {
+        box-sizing: border-box;
+    }
+    /* Style the body */
+    
+     ::selection {
+        background: lightcoral;
+        color: rgb(241, 241, 241);
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    /* Style the top navigation bar */
+    
+    .top_navbar {
+        overflow: hidden;
+        background: white;
+    }
+    /* Style the navigation bar links */
+    
+    .top_navbar a {
+        float: right;
+        display: block;
+        color: rgb(187, 20, 20);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    /* Change color on hover */
+    
+    .top_navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    /* Column container */
+    
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+    }
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    
+    .side {
+        -ms-flex: 10%;
+        /* IE10 */
+        flex: 10%;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    /* Main column */
+    
+    .main {
+        -ms-flex: 60%;
+        /* IE10 */
+        flex: 60%;
+        background-color: white;
+        padding: 20px;
+    }
+    /* Footer */
+    
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: rgb(238, 174, 202);
+        background: linear-gradient(90deg, rgba(238, 174, 202, 1) 5%, rgba(148, 187, 233, 1) 100%);
+    }
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 700px) {
+        .row {
+            flex-direction: column;
+        }
+    }
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 400px) {
+        .navbar a {
+            float: none;
+            width: 100%;
+        }
+    }
+    
+    .main-header-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    @-webkit-keyframes square-to-circle {
+        0% {
+            border-radius: 0 0 0 0;
+            transform: rotate(0deg);
+            background: coral;
+        }
+        25% {
+            border-radius: 50% 0 0 0;
+            transform: rotate(45deg);
+            background: darksalmon;
+        }
+        50% {
+            border-radius: 50% 50% 0 0;
+            transform: rotate(90deg);
+            background: indianred;
+        }
+        75% {
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(135deg);
+            background: lightcoral;
+        }
+        100% {
+            border-radius: 50%;
+            transform: rotate(180deg);
+            background: darksalmon;
+        }
+    }
+    
+    .box-circle-transform {
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        background-color: #373737;
+        outline: 1px solid transparent;
+        -webkit-animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+        -moz-animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+        -ms-animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+        -o-animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+        animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+        position: relative;
+        transform: translateY(-50%);
+        margin-bottom: 35px;
+    }
+    
+    .bigger {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: black;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    .button {
+        width: 140px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: #000;
+        text-transform: none;
+        font-weight: 400;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    .button-3 {
+        border: 2px solid indianred;
+        background-color: indianred;
+        border-radius: 20px;
+        color: #fff;
+        transition: .3s;
+    }
+    
+    .button-3:hover {
+        box-shadow: 8px 8px darksalmon;
+        transition: .3s;
+    }
+    
+    .main-section {
+        margin-top: 50px;
+        padding-top: 200px;
+    }
